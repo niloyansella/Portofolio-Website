@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: futura-pt, sans-serif;
+  font-size: 62.5%;
+}
+header {
+  background: linear-gradient(to bottom, #20387a17, #20387a96),
+    url("./Images/Niloyan\ Sellathurai.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+}
+
+.navbar {
+  padding: 2rem;
+}
+.logo {
+  height: 10rem;
+  width: 30rem;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 5rem;
+}
+.textbox {
+  align-self: center;
+  color: white;
+}
+
+.imagebox {
+  align-self: center;
+}
+
+.header-image {
+  height: 45rem;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 0.8rem;
+  color: whitesmoke;
+}
+
+.secondary-text {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: whitesmoke;
+}
+
+.about-section {
+  background: linear-gradient(to bottom, #20387a, #20387a80);
+  display: flex;
+  justify-content: space-around;
+  gap: 3rem;
+  padding: 3rem;
+  flex-wrap: wrap-reverse;
+}
+
+.content-left {
+  text-align: center;
+}
+
+.content-right {
+  color: white;
+  width: 60%;
+}
+.profielfoto {
+  height: 40rem;
+  border-radius: 3rem;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-about {
+  font-size: 2rem;
+}
+
+.header-image {
+  border-radius: 3rem;
+}
+
+.skills {
+  padding: 5rem;
+  background: linear-gradient(to bottom, #20387a7a, #20387a);
+  color: white;
+}
+.container-skill {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.box1 {
+  background-color: #20387a;
+  color: white;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr 1fr;
+  padding: 3rem;
+  text-align: center;
+}
+
+.heading-third {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem;
+}
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.portofolio {
+  background-color: #20387a;
+  padding: 8rem;
+  color: white;
+}
+
+.portofolio-boxes {
+  display: flex;
+  justify-content: space-around;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.portofolio-box {
+  height: 40rem;
+  width: 80rem;
+}
+
+.porto-img {
+  height: 400px;
+  width: 800px;
+  border-radius: 30px;
+}
+
+.porto-img:hover {
+  transform: translate(50px);
+  transition: 0.5s;
+}
+.btn {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+.btn a {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+.btn a:before,
+.btn a:after {
+  position: absolute;
+  content: "Download CV";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.btn a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+.btn a:after {
+  color: rgb(255, 255, 255);
+  transform: rotateX(90deg) translateZ(25px);
+}
+.btn a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    background: linear-gradient(to bottom, #001346, #20387a96);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+  }
+
+  .header-image {
+    height: 35rem;
+    margin-top: 5rem;
+  }
+
+  .heading-primary {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 0.8rem;
+    color: whitesmoke;
+  }
+
+  .secondary-text {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+  }
+
+  .logo {
+    height: 8rem;
+    width: 20rem;
+  }
+
+  .portofolio-box {
+    height: 20rem;
+    width: 30rem;
+  }
+  .porto-img {
+    height: 20rem;
+    width: 30rem;
+  }
+}
+footer {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  padding: 100px;
+}
+
+form {
+  max-width: 420px;
+  margin: 50px auto;
+}
+
+.text {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+}
+.feedback-input {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  border: 4px solid #20387a;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #20387a;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #20387a;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #20387a;
+}
